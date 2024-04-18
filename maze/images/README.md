@@ -1,0 +1,1 @@
+Contains avatar images

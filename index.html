@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maze Game Launcher</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('images/background.jpg'); /* Updated URL for the background image */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff; /* White font color for better visibility */
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        h1 {
+            color: #fff; /* White font color for better visibility */
+        }
+
+        .button {
+            padding: 10px 20px;
+            background-color: rgba(0, 123, 255, 0.8); /* Semi-transparent blue */
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+            margin: 10px; /* Added margin for better spacing */
+        }
+
+        .button:hover {
+            background-color: rgba(0, 123, 255, 1); /* Solid blue on hover */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome to the Maze Game Launcher</h1>
+        <p>Choose a mode to play:</p>
+        <button class="button" onclick="openSinglePlayer()">Single Player Mode</button>
+        <button class="button" onclick="openMultiplayer()">Multiplayer Mode</button>
+    </div>
+
+    <script>
+        function openSinglePlayer() {
+            window.open('maze/spmd.py', '_blank', 'width=800,height=600');
+        }
+
+        function openMultiplayer() {
+            window.open('maze/mltpmd.py', '_blank', 'width=800,height=600');
+        }
+    </script>
+</body>
+
+</html>
